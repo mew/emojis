@@ -1,4 +1,4 @@
-package zone.nora.emojis;
+package zone.nora.emojis.gen;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
@@ -8,7 +8,7 @@ import org.apache.commons.io.FileUtils;
 import java.io.File;
 import java.io.IOException;
 
-public class Emojis {
+public class GenerateEmojiJson {
     public static void main(String[] args) throws IOException {
         File input = new File("emojis.json");
         String contents = FileUtils.readFileToString(input);
